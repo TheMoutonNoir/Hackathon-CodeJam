@@ -1,5 +1,7 @@
 package com.example.akademos
 
+import android.content.Context
+import android.content.SharedPreferences
 import java.time.LocalDate
 import java.util.*
 
@@ -48,6 +50,15 @@ class ReminderList {
             println(rem.toString() + "\n============")
         }
     }
+
+    fun remindersToStringList() {
+        var reminderString = arrayListOf<String>()
+        for (i in 0..reminders.size) {
+            reminderString[i] = reminders[i].toString()
+        }
+    }
+
+
 
 
 }
