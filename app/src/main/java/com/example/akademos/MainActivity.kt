@@ -6,8 +6,6 @@ import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.tabs.TabLayout
 import androidx.viewpager.widget.ViewPager
 import androidx.appcompat.app.AppCompatActivity
-import android.view.Menu
-import android.view.MenuItem
 import com.example.akademos.ui.main.SectionsPagerAdapter
 import com.example.akademos.databinding.ActivityMainBinding
 import android.app.AlarmManager
@@ -17,6 +15,7 @@ import android.content.Intent
 import android.os.SystemClock
 import androidx.core.content.ContextCompat.getSystemService
 import android.R
+import java.util.Calendar
 
 class MainActivity : AppCompatActivity() {
 
@@ -43,9 +42,24 @@ class MainActivity : AppCompatActivity() {
         tabs.setupWithViewPager(viewPager)
         val fab: FloatingActionButton = binding.fab
 
+
+        var rem : ReminderList = ReminderList()
+
+        rem.addReminder(4,28,4,30)
+        rem.addReminder(5,30,12,40)
+        rem.addReminder(6,14,23,0)
+        rem.addReminder(4,19,9,53)
+        rem.printReminders()
+
+
+
         fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
+
+
+
         }
+
     }
 }
