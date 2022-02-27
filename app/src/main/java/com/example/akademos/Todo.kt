@@ -1,6 +1,6 @@
 package com.example.akademos
 
-class todo {
+class Todo {
     var todoArray : Array<String> =  arrayOf<String>()
     fun todolst( element: String): Array<String> {
         var task: MutableList<String> = todoArray.toMutableList()
@@ -18,4 +18,4 @@ class todo {
         newtask[index] = element
         return newtask.toTypedArray()
     }
-    }
+}
