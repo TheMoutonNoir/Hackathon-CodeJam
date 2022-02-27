@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Akademos</string>
-    <string name="tab_text_1">Tab 1</string>
-    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_1">POMODORO ⏳</string>
+    <string name="tab_text_2">TO-DO LIST 📝</string>
+    <string name="tab_text_3">Place Holder</string>
+    <string name="tab_text_4">Place Holder</string>
 </resources>
