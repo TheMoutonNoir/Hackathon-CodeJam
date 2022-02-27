@@ -27,9 +27,14 @@ class MainActivity : AppCompatActivity() {
         tabs.setupWithViewPager(viewPager)
         val fab: FloatingActionButton = binding.fab
 
-        val r : Reminder = Reminder("DO YOUR CHORES", Calendar.getInstance())
-        r.printReminder()
 
+        var rem : ReminderList = ReminderList()
+
+        rem.addReminder(4,28,4,30)
+        rem.addReminder(5,30,12,40)
+        rem.addReminder(6,14,23,0)
+        rem.addReminder(4,19,9,53)
+        rem.printReminders()
 
 
 

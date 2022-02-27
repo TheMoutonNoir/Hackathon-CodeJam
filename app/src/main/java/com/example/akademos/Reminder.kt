@@ -5,7 +5,7 @@ import java.util.*
 
 class Reminder(private val message: String, private val time: Calendar){
 
-    var reminderMessage : String = message + " is set for " + time.time.toString()
+    var reminderMessage : String = message + " is set for " + time.toString()
 
     fun printReminder(){
         println(reminderMessage)
@@ -24,18 +24,6 @@ class Reminder(private val message: String, private val time: Calendar){
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
     override fun equals(other: Any?): Boolean{
         if(other == null){
             return false
@@ -52,5 +40,9 @@ class Reminder(private val message: String, private val time: Calendar){
             return false
         }
         return true
+    }
+
+    override fun toString(): String {
+        return "The message is: " + message + "\nThe date is: " + time.time.toString()
     }
 }
