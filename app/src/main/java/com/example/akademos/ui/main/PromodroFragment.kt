@@ -27,7 +27,7 @@ class PromodroFragment : Fragment() {
         btn.setOnClickListener {
             val AlarmMgr = container?.context?.getSystemService(Context.ALARM_SERVICE) as AlarmManager
             val Alarm = Intent(container?.context, AlarmReceiver::class.java)
-            Alarm.putExtra("Message","Wassup")
+            Alarm.putExtra("Message","Take your break! You deserve it :)")
             val pendingIntent = PendingIntent.getBroadcast(container?.context, 0, Alarm, PendingIntent.FLAG_UPDATE_CURRENT);
             AlarmMgr.setExact(
                 AlarmManager.ELAPSED_REALTIME_WAKEUP,
