@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         tabs.setupWithViewPager(viewPager)
         val fab: FloatingActionButton = binding.fab
 
-
+        rem.printReminders()
 
         rem.addReminder(4,28,4,30)
         rem.addReminder(5,30,12,40)
